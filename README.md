@@ -94,6 +94,10 @@ The front matter uses YAML. The body is standard Markdown — write it like you'
 3. **Output-oriented** — Clear templates so the LLM knows exactly what to produce
 4. **Quality-gated** — Explicit criteria for what makes a good output
 
+## Examples
+
+- [NavHub Pitch Deck](examples/navhub-pitch-deck.md) — A real-world pitch deck outline generated using the [Pitch Deck](creative/pitch-deck/SKILL.md) skill
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting new skills.

@@ -94,6 +94,10 @@ Front matter 使用 YAML 格式。正文是标准 Markdown — 像给领域专�
 3. **输出导向** — 清晰的模板让 LLM 知道该产出什么
 4. **质量把关** — 明确的标准定义什么是好的输出
 
+## 示例
+
+- [NavHub 融资 PPT](examples/navhub-pitch-deck.md) — 使用 [融资 PPT](creative/pitch-deck/SKILL.md) 技能生成的真实案例
+
 ## 贡献
 
 请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何提交新技能。
