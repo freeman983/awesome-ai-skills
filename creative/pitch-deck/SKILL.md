@@ -1,6 +1,7 @@
 ---
 name: pitch-deck
 description: Create investor pitch deck outlines following proven fundraising frameworks. Use this skill when asked to create a pitch deck, investor presentation, fundraising deck, startup pitch, or investor materials. Triggers include "pitch deck", "investor deck", "fundraising presentation", "startup pitch", "Series A deck", "seed deck", "investor slides", or requests to structure a startup presentation for investors.
+language: auto
 ---
 
 # Pitch Deck Builder
@@ -193,6 +194,12 @@ Use of Funds:
 - Detailed competitive analysis
 - Go-to-market strategy details
 - Cap table summary
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

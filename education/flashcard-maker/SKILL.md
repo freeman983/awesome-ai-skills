@@ -1,6 +1,7 @@
 ---
 name: flashcard-maker
 description: Generate high-quality flashcards optimized for spaced repetition learning. Use this skill when asked to create flashcards, study cards, Anki decks, revision materials, or memory aids. Triggers include "flashcard", "Anki", "study cards", "spaced repetition", "memorize", "review cards", or requests to turn content into learnable chunks.
+language: auto
 ---
 
 # Flashcard Maker
@@ -92,6 +93,12 @@ A: [Solution with reasoning]
 | Hard | Synthesize or compare | "How does X differ from Y in context Z?" |
 
 Generate a mix: 40% easy, 40% medium, 20% hard.
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

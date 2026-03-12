@@ -1,6 +1,7 @@
 ---
 name: lesson-planner
 description: Design structured lesson plans aligned with learning objectives using Bloom's Taxonomy. Use this skill when asked to create a lesson plan, design a course, structure a workshop, plan a training session, or build a curriculum. Triggers include "lesson plan", "course design", "workshop", "training", "curriculum", "teaching plan", "learning objectives", or requests to structure educational content.
+language: auto
 ---
 
 # Lesson Planner
@@ -84,6 +85,12 @@ Assessment: "Given an unsorted array of 1M elements, which algorithm would you c
     ↓
 Activity: "Run each algorithm on datasets of increasing size, record times, plot results"
 ```
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

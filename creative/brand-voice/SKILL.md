@@ -1,6 +1,7 @@
 ---
 name: brand-voice
 description: Define and document a brand's voice, tone, and communication style. Use this skill when asked to create brand guidelines, define brand voice, establish tone of voice, create a style guide, or build communication standards. Triggers include "brand voice", "tone of voice", "brand guidelines", "style guide", "brand personality", "communication style", "brand identity", or requests to define how a brand should sound.
+language: auto
 ---
 
 # Brand Voice Designer
@@ -127,6 +128,12 @@ leverage, synergy, utilize, disrupt, revolutionary, best-in-class, world-class
 | Documentation | Detailed | Medium | Task-oriented, no marketing speak |
 | In-app UI | Minimal | Low | Action verbs, no jargon |
 | Blog | Long-form | Medium | Opinionated, educational |
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

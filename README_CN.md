@@ -78,6 +78,7 @@ response = client.messages.create(
 ---
 name: skill-id
 description: 何时使用此技能。包含触发词。
+language: auto
 ---
 
 # 技能标题
@@ -86,6 +87,19 @@ description: 何时使用此技能。包含触发词。
 ```
 
 Front matter 使用 YAML 格式。正文是标准 Markdown — 像给领域专家做简报一样写。
+
+### 语言控制
+
+每个 Skill 在 front matter 中包含 `language` 字段，正文中包含 `Language Rules` 段落：
+
+| 值 | 行为 |
+|----|------|
+| `auto` | 跟随用户输入语言（默认） |
+| `en` | 强制英文输出 |
+| `zh-CN` | 强制简体中文输出 |
+| 任意 locale | 强制该语言 |
+
+设为 `auto` 时，中文提问得到中文输出，英文提问得到英文输出。用户也可以在对话中覆盖："用中文写" 或 "write in English"。
 
 ### 设计原则
 

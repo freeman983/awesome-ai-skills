@@ -1,6 +1,7 @@
 ---
 name: writing-wechat-article
 description: Write engaging WeChat Official Account (公众号) articles optimized for mobile reading and sharing. Use this skill when asked to write a WeChat article, 公众号文章, WeChat post, or Chinese long-form content for social distribution. Triggers include "公众号", "微信文章", "WeChat article", "WeChat post", "公众号排版", or requests for Chinese social media long-form content.
+language: auto
 ---
 
 # 微信公众号文章写作
@@ -208,6 +209,12 @@ description: Write engaging WeChat Official Account (公众号) articles optimiz
 - 文末提问（具体的、容易回答的）
 - "你觉得呢？" 不如 "你遇到过类似的情况吗？"
 - 评论区置顶一条引导性评论
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## 输出格式
 

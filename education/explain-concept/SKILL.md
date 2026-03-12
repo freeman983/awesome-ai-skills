@@ -1,6 +1,7 @@
 ---
 name: explain-concept
 description: Explain any concept using the Feynman Technique with progressive depth levels. Use this skill when asked to explain something, teach a concept, break down a topic, make something understandable, or simplify complex ideas. Triggers include "explain", "what is", "how does X work", "teach me", "ELI5", "break down", "simplify", or requests to understand any technical, scientific, business, or abstract concept.
+language: auto
 ---
 
 # Concept Explainer
@@ -117,6 +118,12 @@ Technical precision with nuance.
 - **False simplicity** — oversimplifying to the point of being wrong
 - **Condescension** — "it's actually quite simple" (if it were, they wouldn't be asking)
 - **Tangent spirals** — explaining adjacent concepts nobody asked about
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

@@ -1,6 +1,7 @@
 ---
 name: research-topic
 description: Conduct deep research on any topic using a structured multi-angle investigation framework. Use this skill when asked to research something, investigate a topic, do a deep dive, compile a report, or gather comprehensive information on any subject. Triggers include "research", "investigate", "deep dive", "report on", "analyze", "what do we know about", "comprehensive overview", or requests for thorough analysis of any topic.
+language: auto
 ---
 
 # Deep Topic Research
@@ -88,6 +89,12 @@ Rate each source on credibility:
 - Note where experts disagree (open questions)
 - Connect to adjacent topics the user might not have considered
 - Form original insights from the combination of sources
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Structure
 

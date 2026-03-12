@@ -1,6 +1,7 @@
 ---
 name: naming-generator
 description: Generate creative, memorable names for products, companies, features, or projects with linguistic analysis. Use this skill when asked to name something, brainstorm names, find a brand name, name a product, name a feature, or come up with creative naming options. Triggers include "name", "naming", "brand name", "product name", "company name", "what should I call", or requests for creative naming suggestions.
+language: auto
 ---
 
 # Naming Generator
@@ -132,6 +133,12 @@ For top 3-5 candidates:
 - Check for unintended meanings in other languages
 - Search for existing trademarks
 - Check domain availability patterns (.com, .io, .co, .app)
+
+## Language Rules
+
+- Match the language of the user's request by default
+- If the user explicitly specifies a language (e.g., "in English", "用中文"), use that language for all output
+- Keep proper nouns, brand names, and technical terms in their original language
 
 ## Output Format
 

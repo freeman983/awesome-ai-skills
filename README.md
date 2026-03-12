@@ -78,6 +78,7 @@ Place `SKILL.md` files in your project's skill directory. Most AI-powered IDEs c
 ---
 name: skill-id
 description: When to use this skill. Include trigger words.
+language: auto
 ---
 
 # Skill Title
@@ -86,6 +87,19 @@ description: When to use this skill. Include trigger words.
 ```
 
 The front matter uses YAML. The body is standard Markdown — write it like you're briefing a domain expert.
+
+### Language Control
+
+Every skill includes a `language` field in front matter and a `Language Rules` section in the body:
+
+| Value | Behavior |
+|-------|----------|
+| `auto` | Match the user's input language (default) |
+| `en` | Always output in English |
+| `zh-CN` | Always output in Simplified Chinese |
+| Any locale | Force that language |
+
+With `auto`, if you ask in Chinese you get Chinese output. If you ask in English you get English. Users can also override inline: "用中文写" or "write in English".
 
 ### Design Principles
 
